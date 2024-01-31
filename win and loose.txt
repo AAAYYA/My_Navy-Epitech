@@ -1,0 +1,15 @@
+
+Loose :
+	Pour i de 0 à 7:
+		Pour j de 0 à 7:
+			si (map[i][j] != '0' et map[i][j] != '1' et map[i][j] != '9')
+				renvoyer Faux
+	Renvoyer Vrai
+
+Win:
+	compte = 0
+	Pour i de 0 à 7:
+		Pour j de 0 à 7:
+			si (map[i][j] == '9')
+				compte++
+	renvoyer compte > 13
